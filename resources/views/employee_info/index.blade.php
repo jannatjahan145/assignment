@@ -90,7 +90,7 @@
 				    </div>
 				    <div class="col-75">
 				      <div style="height: 90px; width: 90px; border: 1px solid #ddd; margin-bottom: 10px;">
-		                  <img src="#" alt="Upload image" id="img" style="width: 100%; height: 100%;">
+		                  <img src="{{asset('public/images/'.$employee_info->photos)}}" alt="Upload image" id="img" style="width: 100%; height: 100%;">
 		                </div>
 		                <input type="file" name="photos" onchange="document.getElementById('img').src = window.URL.createObjectURL(this.files[0])">
 		              </div>
